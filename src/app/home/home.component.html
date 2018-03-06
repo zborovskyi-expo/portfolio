@@ -1,0 +1,8 @@
+<div class="content">
+  <h1 class="content__main_title" [innerHTML]="mainTitle"></h1>
+  <h2 class="content__sub_title">{{ subTitle }}</h2>
+  <div class="content__buttons">
+    <a class="content__button-contact" rel="contact" [routerLink]="['/contact']">{{ linkContactTitle }}</a>
+    <a class="content__button-my_work" rel="my-work" [routerLink]="['/my-work']">{{ linkMyWorkTitle }}</a>
+  </div>
+</div>
