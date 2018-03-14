@@ -1,3 +1,17 @@
-<p>
-  my-work works!
-</p>
+<div class="content">
+  <h1 class="content__main_title" [innerHTML]="mainTitle"></h1>
+  <div class="content__work_list">
+    <ul class="content__list">
+      <li *ngFor="let item of workList" class="content__list__item">
+        <a href="{{ item.link }}" target="_blank" class="content__list__item__link">
+          <img src="{{ item.link }}{{ item.icon }}" class="content__list__item__image">
+          <span class="content__list__item__title">{{ item.title }}</span>
+          <span class="content__list__item__tags">{{ item.tags }}</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="content__buttons">
+    <a class="content__button-contact" rel="contact" [routerLink]="['/contact']">{{ linkContact }}</a>
+  </div>
+</div>

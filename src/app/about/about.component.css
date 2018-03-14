@@ -9,11 +9,28 @@
 }
 
 .content__main_title {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 16px;
   font-size: 64px;
   font-weight: bold;
   font-family: 'Raleway', sans-serif;
   color: #4285f4;
+}
+
+.content__main_title:before {
+  content: '<h1>';
+}
+
+.content__main_title:after {
+  content: '</h1>';
+}
+
+.content__main_title:before,
+.content__main_title:after {
+  font-size: 16px;
+  color: #8d8d8d;
 }
 
 .content__desc {
@@ -23,8 +40,8 @@
 }
 
 .content__list__item {
-  line-height: 24px;
-  margin-bottom: 16px;
+  line-height: 20px;
+  margin-bottom: 8px;
 }
 
 .content__buttons {

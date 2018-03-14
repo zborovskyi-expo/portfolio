@@ -11,6 +11,9 @@ export class ContactComponent implements OnInit {
   mainTitle: string;
   fullDescription: string;
 
+
+  emailLink: string;
+  phoneLink: string;
   name: string;
   email: string;
   phone: string;
@@ -22,7 +25,8 @@ export class ContactComponent implements OnInit {
   constructor(http: Http) {
     this.http = http;
     this.mainTitle = 'Contact me';
-    this.fullDescription = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ullam repellendus atque facilis eligendi voluptatibus.';
+    this.emailLink = 'bohdan.zborovskyi@gmail.com';
+    this.phoneLink = '+48 724 678 579';
     this.name = '';
     this.email = '';
     this.phone = '';

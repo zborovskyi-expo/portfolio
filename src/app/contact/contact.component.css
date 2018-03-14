@@ -42,6 +42,25 @@
   max-width: 640px;
 }
 
+.content__email_link,
+.content__phone_link {
+  display: block;
+  margin: 6px 0;
+  margin-right: auto;
+  color: #fff;
+}
+
+.content__email_link:hover,
+.content__phone_link:hover {
+  color: #4285f4;
+}
+
+.content__links {
+  margin-top: 12px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+}
 
 .content__form__group {
   position: relative;

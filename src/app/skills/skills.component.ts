@@ -13,7 +13,11 @@ export class SkillsComponent implements OnInit {
 
   constructor() {
     this.mainTitle = 'Skills &<br>Experience';
-    this.fullDescription = ['Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis totam laboriosam unde, voluptates et quaerat laudantium explicabo hic deleniti sunt, fuga facilis placeat quidem, vel!', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus totam molestiae doloremque voluptatem, a nesciunt!', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'];
+    this.fullDescription = [
+      'Developed fully functional responsive websites using HTML5, CSS3, JavaScript(jQuery) and PHP.',
+      'Creating web application development using html5, css3, javascript, python(django) and google search engine',
+      'Interested in popular web development technologies(Node.js, Angular 2/4/5)'
+    ];
     this.linkMyWorkTitle = 'My work';
   }
 

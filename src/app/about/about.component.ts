@@ -14,7 +14,12 @@ export class AboutComponent implements OnInit {
   constructor() {
     this.mainTitle = 'About me';
     this.linkSkillsTitle = 'See my skills';
-    this.fullDescription = ['Lorem ipsum dolor sit amet. Nesciunt amet, nisi mollitia recusandae?', 'Libero illum sapiente quaerat cupiditate. Repudiandae natus, modi totam aut.', 'Veritatis iusto fuga omnis minus.', 'Ratione officia earum, fuga nulla.', 'Velit nobis rerum nesciunt in!'];
+    this.fullDescription = [
+      'An enthusiastic and self-motivated front-backend developer.',
+      'I have two years of experience in HTML5, CSS3, Javascript(jQuery), PHP and Githab.',
+      'I am constantly eager to learn new technologies and languages (Node.js and Angular 2,4,5).',
+      'I am currently seeking a front-backend development position in Cracow or Wroclaw.'
+    ]
   }
 
   ngOnInit() {
