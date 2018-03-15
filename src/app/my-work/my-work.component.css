@@ -48,14 +48,11 @@
 .content__list__item__link {
   display: flex;
   flex-direction: column;
+  padding: 12px;
+  background-color: #181818;
 }
 
 .content__list__item__link:hover {
-  opacity: .7;
-}
-
-.content__list__item__link:hover .content__list__item__title,
-.content__list__item__link:hover .content__list__item__tags {
   background-color: #4285f4;
 }
 
@@ -70,20 +67,16 @@
   color: #fff;
   font-size: 24px;
   width: 100%;
-  padding: 12px 6px 6px;
-  background-color: #181818;
-  transition: .35s ease;
+  padding: 12px 0 6px;
 }
 
 .content__list__item__tags {
   display: block;
   color: #fff;
   width: 100%;
-  padding: 6px;
-  background-color: #181818;
+  padding: 6px 0;
   font-size: 14px;
   text-transform: uppercase;
-  transition: .35s ease;
 }
 
 .content__buttons {

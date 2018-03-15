@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
-  constructor() { }
+  link_fb: string;
+  link_in: string;
+
+  constructor() {
+    this.link_fb = 'https://www.facebook.com/bohdan.zborovskiy';
+    this.link_in = 'https://www.linkedin.com/in/bohdan-zborovskyi-74b25710b/';
+  }
 
   ngOnInit() {
   }
