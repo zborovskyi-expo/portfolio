@@ -1,0 +1,31 @@
+<div class="content">
+  <h1 class="content__main_title">{{ mainTitle }}</h1>
+  <div class="content__links">
+    <a class="content__email_link" [href]="'mailto:' + emailLink">{{ emailLink }}</a>
+    <a class="content__phone_link" [href]="'tel:' + phoneLink">{{ phoneLink }}</a>
+  </div>
+  <form class="content__form">
+    <div class="content__form__group">
+      <input class="content__form__input" type="text" name="contact_name" id="contact_name" placeholder="Name" [(ngModel)]="name" required>
+      <div class="content__form__error" [class.is_error]="nameError">Enter your name</div>
+    </div>
+    <div class="content__form__group">
+      <input class="content__form__input" type="email" name="contact_email" id="contact_email" placeholder="E-mail" [(ngModel)]="email" required>
+      <div class="content__form__error" [class.is_error]="emailError">Enter your email</div>
+    </div>
+    <div class="content__form__group">
+      <input class="content__form__input" type="text" name="contact_phone" id="contact_phone" placeholder="Phone" [(ngModel)]="phone" required>
+      <div class="content__form__error" [class.is_error]="phoneError">Enter your phone number</div>
+    </div>
+    <div class="content__form__group">
+      <textarea class="content__form__textarea" name="contact_body" id="contact_body" placeholder="Message" [(ngModel)]="message" required></textarea>
+      <div class="content__form__error" [class.is_error]="messageError">Enter your message</div>
+    </div>
+    <div class="content__form__group">
+      <button class="content__form__submit" type="submit" name="contact_submit" id="contact_submit" (click)="onSubmit()">Send</button>
+    </div>
+    <div class="content__form__finish" [class.is_active]="formReturnStatus">
+      {{ formReturnText }}
+    </div>
+  </form>
+</div>
