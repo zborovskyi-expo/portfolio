@@ -13,10 +13,7 @@ router.post('/send-email', (req, res, next) => {
   var message = req.body.params.message;
 
   var transporter = nodemailer.createTransport({
-    //service: 'gmail',
-    host: "smtp.gmail.com", // hostname
-    secureConnection: true, // use SSL
-    port: 465, // port for secure SMTP
+    service: 'gmail',
     auth: {
       user: email_to,
       pass: 'sky7fall1'
